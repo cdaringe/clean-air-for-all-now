@@ -15,7 +15,7 @@ export function Nav({ className = "" }) {
   return (
     <nav className={`${className} flex flex-col text-l`}>
       {NAV_LINKS.map((text) => (
-        <a className="uppercase pb-2" href={text.replace(/ /g, "-")}>
+        <a key={text} className="uppercase pb-2" href={text.replace(/ /g, "-")}>
           {text}
         </a>
       ))}

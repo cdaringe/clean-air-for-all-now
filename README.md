@@ -1,5 +1,7 @@
 # clean-air-for-all-now
 
+[![main](https://github.com/cdaringe/clean-air-for-all-now/actions/workflows/main.yaml/badge.svg)](https://github.com/cdaringe/clean-air-for-all-now/actions/workflows/main.yaml)
+
 ## usage
 
 ### dev

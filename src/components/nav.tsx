@@ -13,7 +13,7 @@ const NAV_LINKS = [
 
 export function Nav({ className = "" }) {
   return (
-    <nav className={`${className} flex flex-col text-l`}>
+    <nav className={`${className} flex flex-col pl-2 lg:pl-0 text-l`}>
       {NAV_LINKS.map((text) => (
         <a key={text} className="uppercase pb-2" href={text.replace(/ /g, "-")}>
           {text}

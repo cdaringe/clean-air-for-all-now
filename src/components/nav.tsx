@@ -1,23 +1,30 @@
+import Link from "next/link";
+
 const NAV_LINKS = [
-  "home",
-  "our mission",
-  "about us",
-  "newsletters",
-  "news media",
-  "scientific studies",
-  "chemical of the month",
-  "testimonies",
-  "contact us",
+  "Home",
+  // "Our Mission",
+  "About Us",
+  "Newsletters",
+  "News Media",
+  // "Scientific Studies",
+  "Chemical of the Month",
+  // "Testimonies",
+  "Contact Us",
   // "donate",
 ];
 
 export function Nav({ className = "" }) {
   return (
-    <nav className={`${className} flex flex-col pl-2 lg:pl-0 text-l`}>
+    <nav className={`${className} flex flex-col pl-2 lg:pl-0 text-lg`}>
       {NAV_LINKS.map((text) => (
-        <a key={text} className="uppercase pb-2" href={text.replace(/ /g, "-")}>
-          {text}
-        </a>
+        <Link
+          key={text}
+          href={
+            "/" + text.replace(/ /g, "-").replace(/^home/i, "").toLowerCase()
+          }
+        >
+          <a className="pb-1 text-blue-600 visited:text-purple-800">{text}</a>
+        </Link>
       ))}
       <a
         href="https://facebook.com/cafa-now"

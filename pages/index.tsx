@@ -1,17 +1,24 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import Image from "next/image";
 import { Mission } from "../src/components/mission";
+import Featured from "../src/components/featured";
 
-export default function Home({ className = "" }) {
+export default function Home(props) {
   return (
-    <div className={`${className}`}>
+    <div {...props}>
       <Head>
         <title>Clean Air For All</title>
         <meta name="description" content="Clean Air For All - New Mexico" />
       </Head>
       <main>
-        <div className="w-full p-4">
-          <img src="intel-rancho.jpg" className="shadow-lg rounded" />
+        <div className="w-full">
+          <Mission />
+          <Featured />
+          <img
+            alt="intel rancho"
+            src="intel-rancho.jpg"
+            className="shadow-lg rounded"
+          />
           <p className="text-gray">
             The Intel plant in Rio Rancho spews toxic fumes above a residential
             neighborhood in Corrales, NM. A house is for sale just down from the
@@ -19,7 +26,6 @@ export default function Home({ className = "" }) {
             buyers.
           </p>
         </div>
-        <Mission />
       </main>
     </div>
   );

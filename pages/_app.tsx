@@ -5,10 +5,10 @@ import { Nav } from "../src/components/nav";
 function MyApp({ Component, pageProps }) {
   return (
     <div className="m-auto w-full md:max-w-4xl  bg-gradient-to-r from-transparent to-cyan-300">
-      <Banner className="pt-8" />
-      <div className="flex">
+      <Banner className="pt-8 pb-4" />
+      <div className="flex pb-8">
         <Nav className="grow-0" />
-        <Component className="flex" {...pageProps} />
+        <Component className="pl-4 pr-4 md:pl-8 md:pr-8" {...pageProps} />
       </div>
       <footer>
         {/* <a

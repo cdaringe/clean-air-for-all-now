@@ -15,7 +15,7 @@ const NAV_LINKS = [
 
 export function Nav({ className = "" }) {
   return (
-    <nav className={`${className} flex flex-col pl-2 lg:pl-0 text-lg`}>
+    <nav className={`nav ${className} flex flex-col pl-2 lg:pl-0 text-lg`}>
       {NAV_LINKS.map((text) => (
         <Link
           key={text}

@@ -1,22 +1,28 @@
-import { Link } from "../src/components/link";
+import ListPage from "../src/components/list-page";
 
 const links = [
   {
-    url: "https://time.com/6140476/intel-building-factory-ohio/",
+    href: "https://time.com/6140476/intel-building-factory-ohio/",
     text: "Exclusive: Intel Reveals Plans for Massive Factory in Ohio | Time",
+  },
+  {
+    text: "Marcy Brandenburg’s Letter to the Editor/Albuquerque Journal printed 10/12/2021",
+    href: "https://web.archive.org/web/20220214200114/https://mailchi.mp/243cb02fe6d5/marcyslettertoeditor",
+  },
+  {
+    text: "Op/Ed Letter Albuquerque Journal - Barbara Rockwell, author of Boiling Frogs Intel vs The Village",
+    href: "https://web.archive.org/web/20220214200114/https://mailchi.mp/1abd8b486887/barbararockwell-letter",
+  },
+  {
+    text: "Carolyn Carlson's Article in 'The Paper' Intel Moves Forward With Making Tiny Chips and Using Lots of Water - The Paper. (abq.news)",
+    href: "https://web.archive.org/web/20220214200114/https://abq.news/2021/10/intel-moves-forward-with-making-tiny-chips-and-using-lots-of-water/",
+  },
+  {
+    text: "2021 October 23 Issue INTEL Watchdog Group Changes Name – Corrales Comment",
+    href: "https://web.archive.org/web/20220214200114/https://corralescomment.com/2021/10/26/2021-october-23-issue-intel-watchdog-group-changes-name/",
   },
 ];
 
-export default function NewsMedia(props) {
-  return (
-    <div {...props}>
-      <ul className="list-disc list-inside">
-        {links.map((link) => (
-          <li key={link.url}>
-            <Link href={link.url}>{link.text}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+const NewsMedia = (props) => <ListPage links={links} {...props} />;
+
+export default NewsMedia;

@@ -8,7 +8,7 @@ const NAV_LINKS = [
   "News Media",
   // "Scientific Studies",
   "Chemical of the Month",
-  // "Testimonies",
+  "Testimonies",
   "Contact Us",
   // "donate",
 ];

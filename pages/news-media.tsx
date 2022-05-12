@@ -23,6 +23,8 @@ const links = [
   },
 ];
 
-const NewsMedia = (props) => <ListPage links={links} {...props} />;
+const NewsMedia = (props) => (
+  <ListPage title="News Media" links={links} {...props} />
+);
 
 export default NewsMedia;

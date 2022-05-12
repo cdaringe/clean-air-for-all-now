@@ -7,5 +7,7 @@ const links = [
   },
 ];
 
-const Studies = (props) => <ListPage links={links} {...props} />;
+const Studies = (props) => (
+  <ListPage title="Scientific Studies" links={links} {...props} />
+);
 export default Studies;

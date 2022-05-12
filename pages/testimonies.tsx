@@ -11,6 +11,8 @@ const links = [
   },
 ];
 
-const Testimonies = (props) => <ListPage links={links} {...props} />;
+const Testimonies = (props) => (
+  <ListPage title="Testimonies" links={links} {...props} />
+);
 
 export default Testimonies;

@@ -1,11 +1,16 @@
 import Link from "next/link";
+import { PageHeader } from "../src/components/page-header";
 
 export default function COM(props) {
+  const now = new Date();
   return (
     <div {...props}>
-      <h2 className="text-xl">Chemical Of The Month</h2>
+      <PageHeader>Chemical Of The Month</PageHeader>
       <h3 className="text-lg mb-2">
-        Intel NM Chemical of the Month March 2022 Hydrogen Fluoride (HF)
+        Intel NM Chemical of the Month{" "}
+        {now.toLocaleString("default", { month: "long" })}{" "}
+        {now.toLocaleString("default", { year: "numeric" })} Hydrogen Fluoride
+        (HF)
       </h3>
       <p className="mb-2">
         [The following is a compilation of material from the websites of the

@@ -1,6 +1,9 @@
+import { PageHeader } from "../src/components/page-header";
+
 export default function AboutUs(props) {
   return (
     <div {...props}>
+      <PageHeader>About Us</PageHeader>
       <p className="mb-2">
         Clean Air for All Now (CAFA-now) was organized to educate and inform the
         public about Toxic Air Pollutants from the Intel plant in Rio Rancho New

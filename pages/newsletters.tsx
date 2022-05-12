@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PageHeader } from "../src/components/page-header";
 
 const newsletters = [
   "Newsletter1.docx",
@@ -8,6 +9,7 @@ const newsletters = [
 export default function Newsletters(props) {
   return (
     <div {...props}>
+      <PageHeader>Newsletters</PageHeader>
       <ul className="list-disc list-inside">
         {newsletters.map((nl) => (
           <li key={nl}>

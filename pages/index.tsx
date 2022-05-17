@@ -2,6 +2,7 @@
 import Head from "next/head";
 import { Mission } from "../src/components/mission";
 import Featured from "../src/components/featured";
+import { Link } from "../src/components/link";
 
 export default function Home(props) {
   return (
@@ -25,6 +26,17 @@ export default function Home(props) {
             plant; sellers must disclose the risks of living here to potential
             buyers.
           </p>
+          <Link href="intel-rancho-map.jpeg">
+            <img
+              alt="intel rancho map"
+              src="intel-rancho-map.jpeg"
+              className="shadow-lg rounded mt-2 mb-2 block"
+            />
+          </Link>
+          <caption className="text-gray-800 text-sm w-full italic">
+            This aerial photo shows the dense residential development
+            surrounding the Intel NM plant.
+          </caption>
         </div>
       </main>
     </div>

@@ -11,9 +11,7 @@ export function Banner({ className = "" }) {
           />
         </div>
         <div className="w-64 text-center align-middle justify-middle">
-          {"PUT PEOPLE FIRST".split(" ").map((t) => (
-            <p key={t}>{t}</p>
-          ))}
+          {"PUT PEOPLE FIRST".split(" ").map((t) => <p key={t}>{t}</p>)}
         </div>
       </div>
       <div className="flex justify-end">

@@ -3,7 +3,8 @@ import ComPage from "../../src/components/com-page";
 
 const COM: React.FC = (props) => (
   <ComPage chemicalLabel="Hydrogen Fluoride (HF)" {...props}>
-    {/* <p className="mb-2">
+    {
+      /* <p className="mb-2">
       [The following is a compilation of material from the websites of the
       Centers for Disease Control and Prevention and the National Institutes of
       Health.]
@@ -37,7 +38,8 @@ const COM: React.FC = (props) => (
     </p>
     <br />
     <hr />
-    <br /> */}
+    <br /> */
+    }
     <p>
       Intel New Mexico uses and emits a wide variety of chemicals, many of which
       are toxic and present a danger to human health and to the environment.
@@ -59,7 +61,8 @@ const COM: React.FC = (props) => (
       levels such as would be encountered in non-occupational (e.g.,
       residential) settings. Recently though, more work is being done to examine
       the potential risk of constant exposure to low levels of toxic chemicals,
-      and several articles about that work are posted on this website on the{" "}
+      and several articles about that work are posted on this website on the
+      {" "}
       <Link href={"/articles"}>
         <a className="text-blue-600 visited:text-purple-800">articles</a>
       </Link>{" "}

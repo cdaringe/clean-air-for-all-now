@@ -19,9 +19,8 @@ export function Nav({ className = "" }) {
       {NAV_LINKS.map((text) => (
         <Link
           key={text}
-          href={
-            "/" + text.replace(/ /g, "-").replace(/^home/i, "").toLowerCase()
-          }
+          href={"/" +
+            text.replace(/ /g, "-").replace(/^home/i, "").toLowerCase()}
         >
           <a className="pb-1 text-blue-600 visited:text-purple-800">{text}</a>
         </Link>

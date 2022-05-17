@@ -7,9 +7,10 @@ export default function AboutUs(props) {
       <p className="mb-2">
         Clean Air for All Now (CAFA-now) was organized to educate and inform the
         public about Toxic Air Pollutants from the Intel plant in Rio Rancho New
-        Mexico. {"Intel's"} dangerous emissions are being released into
-        residential neighborhoods where residents have reported terrible odors
-        and related illnesses for over 30 years.
+        Mexico. {"Intel's"}{" "}
+        dangerous emissions are being released into residential neighborhoods
+        where residents have reported terrible odors and related illnesses for
+        over 30 years.
       </p>
       <p className="mb-2">
         CAFA-now will share data, studies, articles, testimonies and pertinent

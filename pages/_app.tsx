@@ -9,7 +9,8 @@ function MyApp({ Component, pageProps }) {
       <Nav className="grow-0 mb-2" />
       <Component className="body pl-4 pr-4" {...pageProps} />
       <footer className="mt-8">
-        {/* <a
+        {
+          /* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -18,7 +19,8 @@ function MyApp({ Component, pageProps }) {
           <span>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a> */}
+        </a> */
+        }
       </footer>
     </div>
   );

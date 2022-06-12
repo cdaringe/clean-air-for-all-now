@@ -14,6 +14,13 @@ export default function Home(props) {
       <main>
         <div className="w-full">
           <Mission />
+          <a
+            target="blank"
+            href="https://gofund.me/81a09bb5"
+            className="block font-bold text-center cursor-pointer mb-4 p-4 w-full bg-blue-500 hover:bg-blue-800 transition-all rounded drop-shadow-lg text-white"
+          >
+            Donate Now!
+          </a>
           <Featured />
           <img
             alt="intel rancho"

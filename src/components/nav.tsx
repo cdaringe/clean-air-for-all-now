@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 
 const NAV_LINKS = [
   "Home",
@@ -13,18 +14,27 @@ const NAV_LINKS = [
   // "donate",
 ];
 
+const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = (props) => (
+  <a className="pb-1 text-blue-600 visited:text-purple-800" {...props} />
+);
+
 export function Nav({ className = "" }) {
   return (
     <nav className={`nav ${className} flex flex-col pl-2 lg:pl-0 text-lg`}>
       {NAV_LINKS.map((text) => (
         <Link
+          passHref
           key={text}
-          href={"/" +
-            text.replace(/ /g, "-").replace(/^home/i, "").toLowerCase()}
+          href={
+            "/" + text.replace(/ /g, "-").replace(/^home/i, "").toLowerCase()
+          }
         >
-          <a className="pb-1 text-blue-600 visited:text-purple-800">{text}</a>
+          <A>{text}</A>
         </Link>
       ))}
+      <Link href="https://gofund.me/81a09bb5" passHref>
+        <A>Donate</A>
+      </Link>
       <div>
         <a
           href="https://facebook.com/cafa-now"

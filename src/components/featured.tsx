@@ -3,7 +3,7 @@ import Card from "./card";
 
 export default function Featured() {
   return (
-    <Card title={"Featured Article"}>
+    <Card title="Featured Article">
       <>
         <Link href={"/Long-Term-Exposure.docx"}>
           <a className="font-bold text-blue-600 visited:text-purple-800">

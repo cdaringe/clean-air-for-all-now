@@ -1,24 +1,31 @@
 import Link from "next/link";
 import { PageHeader } from "../src/components/page-header";
+import fs from "fs";
+import path from "path";
 
-const newsletters = [
-  "Newsletter1.docx",
-  "Newsletter2.docx",
-  "Newsletter3.docx",
-];
-export default function Newsletters(props) {
+export function getStaticProps() {
+  return {
+    props: {
+      basenames: fs.readdirSync(
+        path.join(process.cwd(), "public", "newsletters")
+      ),
+    },
+  };
+}
+
+export default function Newsletters({ basenames, ...props }) {
   return (
     <div {...props}>
       <PageHeader>Newsletters</PageHeader>
-      <ul className="list-disc list-inside">
-        {newsletters.map((nl) => (
+      <ol className="list-disc list-inside">
+        {basenames.map((nl) => (
           <li key={nl}>
             <Link passHref href={`/newsletters/${nl}`}>
               <a className="text-blue-600 visited:text-purple-800">{nl}</a>
             </Link>
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 }

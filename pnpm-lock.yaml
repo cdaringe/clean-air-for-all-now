@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': 17.0.23
-  '@types/react': 18.0.1
+  '@types/react': 18.0.12
   autoprefixer: 10.4.7
   eslint: 8.13.0
   eslint-config-next: 12.1.4
@@ -15,7 +15,7 @@ specifiers:
 
 devDependencies:
   '@types/node': 17.0.23
-  '@types/react': 18.0.1
+  '@types/react': 18.0.12
   autoprefixer: 10.4.7_postcss@8.4.13
   eslint: 8.13.0
   eslint-config-next: 12.1.4_i2asvufg2gkhmpcau6zb6z7niu
@@ -255,8 +255,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react/18.0.1:
-    resolution: {integrity: sha512-VnWlrVgG0dYt+NqlfMI0yUYb8Rdl4XUROyH+c6gq/iFCiZ805Vi//26UW38DHnxQkbDhnrIWTBiy6oKZqL11cw==}
+  /@types/react/18.0.12:
+    resolution: {integrity: sha512-duF1OTASSBQtcigUvhuiTB1Ya3OvSy+xORCiEf20H0P0lzx+/KeVsA99U5UjLXSbyo1DRJDlLKqTeM1ngosqtg==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2

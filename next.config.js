@@ -6,6 +6,11 @@ const nextConfig = {
   typescript: {},
   basePath: isProd ? "/clean-air-for-all-now" : "",
   assetPrefix: isProd ? "/clean-air-for-all-now/" : "",
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
 };
 
 module.exports = nextConfig;

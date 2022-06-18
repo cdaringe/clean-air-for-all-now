@@ -4,6 +4,11 @@ import Featured from "../src/components/featured";
 import { Link } from "../src/components/link";
 import Image from "next/image";
 
+const isProd = process.env.NODE_ENV === "production";
+const toImgSrc = isProd
+  ? (src: string) => `/clean-air-for-all-now/${src}`
+  : (src: string) => src;
+
 export default function Home(props) {
   return (
     <div {...props}>
@@ -25,7 +30,7 @@ export default function Home(props) {
           <Image
             loader={(v) => v.src}
             alt="intel rancho"
-            src="/intel-rancho.jpg"
+            src={toImgSrc("/intel-rancho.jpg")}
             className="shadow-lg rounded"
             layout="responsive"
             width={4032}
@@ -41,7 +46,7 @@ export default function Home(props) {
             <Image
               loader={(v) => v.src}
               alt="intel rancho map"
-              src="/intel-rancho-map.jpeg"
+              src={toImgSrc("/intel-rancho-map.jpeg")}
               className="shadow-lg rounded mt-2 mb-2 block"
               layout="responsive"
               width={1570}

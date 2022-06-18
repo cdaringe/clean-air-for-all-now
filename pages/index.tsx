@@ -40,10 +40,10 @@ export default function Home(props) {
               className="shadow-lg rounded mt-2 mb-2 block"
             />
           </Link>
-          <caption className="text-gray-800 text-sm w-full italic">
+          <span className="text-gray-800 text-sm w-full italic">
             This aerial photo shows the dense residential development
             surrounding the Intel NM plant.
-          </caption>
+          </span>
         </div>
       </main>
     </div>

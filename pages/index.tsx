@@ -33,7 +33,7 @@ export default function Home(props) {
             plant; sellers must disclose the risks of living here to potential
             buyers.
           </p>
-          <Link href="intel-rancho-map.jpeg">
+          <Link href="/intel-rancho-map.jpeg">
             <img
               alt="intel rancho map"
               src="intel-rancho-map.jpeg"

@@ -14,8 +14,16 @@ const NAV_LINKS = [
   // "donate",
 ];
 
-const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = (props) => (
-  <a className="pb-1 text-blue-600 visited:text-purple-800" {...props} />
+const A: React.FC<React.HTMLProps<HTMLAnchorElement>> = React.forwardRef(
+  function A(props, ref) {
+    return (
+      <a
+        ref={ref}
+        className="pb-1 text-blue-600 visited:text-purple-800"
+        {...props}
+      />
+    );
+  }
 );
 
 export function Nav({ className = "" }) {
@@ -25,9 +33,10 @@ export function Nav({ className = "" }) {
         <Link
           passHref
           key={text}
-          href={
-            "/" + text.replace(/ /g, "-").replace(/^home/i, "").toLowerCase()
-          }
+          href={`/${text
+            .replace(/ /g, "-")
+            .replace(/^home/i, "")
+            .toLowerCase()}`}
         >
           <A>{text}</A>
         </Link>

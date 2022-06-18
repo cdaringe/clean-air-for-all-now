@@ -23,6 +23,7 @@ export default function Home(props) {
           </a>
           <Featured />
           <Image
+            loader={(v) => v.src}
             alt="intel rancho"
             src="/intel-rancho.jpg"
             className="shadow-lg rounded"
@@ -38,6 +39,7 @@ export default function Home(props) {
           </p>
           <Link href="/intel-rancho-map.jpeg">
             <Image
+              loader={(v) => v.src}
               alt="intel rancho map"
               src="/intel-rancho-map.jpeg"
               className="shadow-lg rounded mt-2 mb-2 block"

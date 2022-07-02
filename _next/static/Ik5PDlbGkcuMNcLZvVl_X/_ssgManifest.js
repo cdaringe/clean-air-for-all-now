@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fchemical-of-the-month","\u002Fnewsletters"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

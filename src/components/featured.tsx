@@ -5,7 +5,7 @@ export default function Featured() {
   return (
     <Card title="Featured Article">
       <>
-        <Link href={"/Long-Term-Exposure.docx"}>
+        <Link href={"/articles/Long-Term-Exposure.pdf"}>
           <a className="font-bold text-blue-600 visited:text-purple-800">
             Long-term exposure to permissible concentrations of air pollution
             linked with increased mortality risk

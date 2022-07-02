@@ -21,7 +21,9 @@ export default function Newsletters({ basenames, ...props }) {
         {basenames.map((nl) => (
           <li key={nl}>
             <Link passHref href={`/newsletters/${nl}`}>
-              <a className="text-blue-600 visited:text-purple-800">{nl}</a>
+              <a className="text-blue-600 visited:text-purple-800">
+                {nl.replace(/^\d+\s+/, "").replace(".pdf", "")}
+              </a>
             </Link>
           </li>
         ))}

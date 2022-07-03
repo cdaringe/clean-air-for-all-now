@@ -5,9 +5,7 @@ import { Link } from "../src/components/link";
 import Image from "next/image";
 
 const isProd = process.env.NODE_ENV === "production";
-const toImgSrc = isProd
-  ? (src: string) => `/clean-air-for-all-now/${src}`
-  : (src: string) => src;
+const toImgSrc = (src: string) => src;
 
 export default function Home(props) {
   return (

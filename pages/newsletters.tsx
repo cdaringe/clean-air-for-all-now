@@ -18,7 +18,7 @@ export default function Newsletters({ basenames, ...props }) {
     <div {...props}>
       <PageHeader>Newsletters</PageHeader>
       <ol className="list-disc list-inside">
-        {basenames.map((nl) => (
+        {basenames.reverse().map((nl) => (
           <li key={nl}>
             <Link passHref href={`/newsletters/${nl}`}>
               <a className="text-blue-600 visited:text-purple-800">
